@@ -14,11 +14,13 @@ function revealToSpan() {
     });
 }
 
+
 function valueSetters() {
     gsap.set("#nav", { y: "100%" });
     gsap.set("#home .parent .child", { y: "100%" });
     gsap.set("#home .row img", { opacity: 0 });
 }
+
 
 function loaderAnimation() {
     var tl = gsap.timeline();
@@ -57,6 +59,7 @@ function loaderAnimation() {
         });
 }
 
+
 function animateSvg() {
     document.querySelectorAll("#visual > g").forEach(function (e) {
         var character = e.childNodes[1].childNodes[1];
@@ -72,6 +75,7 @@ function animateSvg() {
         delay: 5
     });
 }
+
 
 function animateHomepage() {
     var tl = gsap.timeline();
@@ -97,12 +101,14 @@ function animateHomepage() {
         });
 }
 
+
 function locoInitialize() {
     const scroll = new LocomotiveScroll({
         el: document.querySelector('#main'),
         smooth: true
     });
 }
+
 
 function cardHoverEffect() {
     document.querySelectorAll(".cnt").forEach(function (cnt) {
@@ -131,6 +137,7 @@ function cardHoverEffect() {
         });
     });
 }
+
 
 revealToSpan();
 valueSetters();
